@@ -20,12 +20,11 @@ def getBookInfo(isbn):
         "publish_date": data["publish_date"],
         "cover_url": data["cover"]
     }
-    print(parsed_data)
+    print(json.dumps(parsed_data))
 
 isbn = "0441569595"
 #isbn = "9781368098175"
 getBookInfo(isbn)
-getCover("isbn", isbn, "L")
 
 #cover  #title
         #author
