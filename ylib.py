@@ -10,8 +10,6 @@ def getBookInfo(isbn):
     # turn json to dict
     data = json.loads(book_data)
     data = data[isbn]
-    with open(f"{isbn}.json", "w") as file:
-        file.write(book_data)
     
     parsed_data = {
         "isbn": isbn,
